@@ -1,0 +1,50 @@
+
+.holeb-breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+}
+.holeb-breadcrumbs > li {
+  margin-left: 10px;
+}
+.holeb-breadcrumbs p {
+  margin-bottom: 0;
+}
+.holeb-breadcrumbs a,
+.holeb-breadcrumbs strong {
+  display: inline-block;
+}
+.holeb-breadcrumbs a span {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+  border-width: 0px !important;
+  border-style: initial !important;
+  border-color: initial !important;
+  -o-border-image: initial !important;
+  border-image: initial !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+.holeb-breadcrumbs:not(.holeb-breadcrumbs-powerpack) {
+  margin-left: 0;
+  margin-right: 0;
+}
+  .holeb-breadcrumbs:not(.holeb-breadcrumbs-powerpack) a,
+  .holeb-breadcrumbs:not(.holeb-breadcrumbs-powerpack) span {
+  display: inline-block;
+}
+.holeb-breadcrumbs-crumb-current{
+  color: #000000;
+  font-weight: 400;
+}
