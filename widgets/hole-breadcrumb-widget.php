@@ -40,6 +40,37 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'label' => esc_html__( 'Content Settings', 'hole-breadcrumb' ),
 			)
 		);
+		$this->add_control(
+			'breadcrumb_presets_style',
+			[
+				'label' => esc_html__( 'Select Style', 'hole-breadcrumb' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'style1',
+				'options' => [
+					'style1' => esc_html__( 'Style 1', 'hole-breadcrumb' ),
+					'style2' => esc_html__( 'Style 2', 'hole-breadcrumb' ),
+					'style3' => esc_html__( 'Style 3', 'hole-breadcrumb' ),
+					'style4' => esc_html__( 'Style 4', 'hole-breadcrumb' ),
+					'style5' => esc_html__( 'Style 5', 'hole-breadcrumb' ),
+					'style6' => esc_html__( 'Style 6', 'hole-breadcrumb' ),
+					'style7' => esc_html__( 'Style 7', 'hole-breadcrumb' ),
+					'style8' => esc_html__( 'Style 8', 'hole-breadcrumb' ),
+					'style9' => esc_html__( 'Style 9', 'hole-breadcrumb' ),
+					'style10' => esc_html__( 'Style 10', 'hole-breadcrumb' ),
+					'style11' => esc_html__( 'Style 11', 'hole-breadcrumb' ),
+					'style12' => esc_html__( 'Style 12', 'hole-breadcrumb' ),
+					'style13' => esc_html__( 'Style 13', 'hole-breadcrumb' ),
+					'style14' => esc_html__( 'Style 14', 'hole-breadcrumb' ),
+					'style15' => esc_html__( 'Style 15', 'hole-breadcrumb' ),
+					'style16' => esc_html__( 'Style 16', 'hole-breadcrumb' ),
+					'style17' => esc_html__( 'Style 17', 'hole-breadcrumb' ),
+					'style18' => esc_html__( 'Style 18', 'hole-breadcrumb' ),
+					'style19' => esc_html__( 'Style 19', 'hole-breadcrumb' ),
+					'style20' => esc_html__( 'Style 20', 'hole-breadcrumb' ),
+					'style21' => esc_html__( 'Style 21', 'hole-breadcrumb' ),
+				],
+			]
+		);
 		// has a control for type selection (ferdaussk)
 		$this->add_control(
 			'show_home',
@@ -516,6 +547,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+		echo '<div class="holeb_'.$settings['breadcrumb_presets_style'].'">';
 		$name_herE = 'hole-breadcrumb';
 		if ( $name_herE == true ) {
 			$query = $this->get_query();
@@ -528,6 +560,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				$this->render_breadcrumbs();
 			}
 		}
+		echo '</div>';
 	}
 
 	protected function get_query() {

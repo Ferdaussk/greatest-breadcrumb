@@ -58,11 +58,8 @@ class ClassHOLEBreadcrumBBoots {
 
 	public function holeb_all_assets_for_the_public(){
 		$all_css_js_file = array(
-			// 'holeb-breadcrumb-style-from-elements-kit' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/style.css'),
-			'holeb-breadcrumb-style-from-elements-222' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/pp_css/1rtlstyle.css'),
-			'holeb-breadcrumb-style-from-elements-111' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/pp_css/1style.css'),
-			'holeb-breadcrumb-style-from-elements-aa' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/pp_css/aa.css'),
-			'holeb-breadcrumb-style-from-elements-ee' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/pp_css/ee.css'),
+			'holeb-breadcrumb-style-decorating' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/decorating.css'),
+			'holeb-breadcrumb-style' => array('holeb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/style.css'),
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
 			wp_enqueue_style( $handle, $fileinfo['holeb_path_define'], null, '1.0', 'all');
