@@ -121,7 +121,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separator_type',
 			array(
-				'label'     => esc_html__( 'Indicator Type', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Separate Type', 'hole-breadcrumb' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'icon',
 				'options'   => array(
@@ -134,7 +134,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separator_text',
 			array(
-				'label'     => esc_html__( 'Indicator', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Separator', 'hole-breadcrumb' ),
 				'type'      => Controls_Manager::TEXT,
 				'default'   => esc_html__( '>', 'hole-breadcrumb' ),
 				'condition' => array(
@@ -152,7 +152,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'skin'             => 'inline',
 				'fa4compatibility' => 'separator_icon',
 				'default'          => array(
-					'value'   => 'fas fa-angle-right',
+					'value'   => 'fas fa-angle-double-right',
 					'library' => 'fa-solid',
 				),
 				'recommended'      => array(
