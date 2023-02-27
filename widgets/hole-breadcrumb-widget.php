@@ -62,6 +62,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'dynamic'   => array(
 					'active'     => true,
 				),
+				'condition' => [
+					'show_home' => 'yes',
+				],
 			)
 		);
 
@@ -77,6 +80,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					'value'   => 'fas fa-home',
 					'library' => 'fa-solid',
 				),
+				'condition' => [
+					'show_home' => 'yes',
+				],
 			)
 		);
 		$this->add_responsive_control(
@@ -780,6 +786,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					);
 				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-cat' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-cat-bread' ) ) . '>' . single_cat_title( '', false ) . '</strong></li>';
 			} elseif ( $query->is_page() ) {
+
 				$this->add_render_attribute(
 					array(
 						'breadcrumbs-item-page'       => array(
@@ -1009,7 +1016,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					)
 				);
 				echo '<li id="hksdh_ferdaus" ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged-bread' ) ) . '>' . esc_attr__( 'Page', 'hole-breadcrumb' ) . ' ' . wp_kses_post( get_query_var( 'paged' ) ) . '</strong></li>';
-				echo 'Ferdaus sk from best wp developer from bnagladesh';
+
 			} elseif ( $query->is_search() ) {
 				$this->add_render_attribute(
 					array(
