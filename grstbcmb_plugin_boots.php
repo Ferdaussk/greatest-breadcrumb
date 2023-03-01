@@ -1,11 +1,11 @@
 <?php
-namespace HOLEBreadcrumB;
+namespace GRSTBCMBreadcrumB;
 
-use HOLEBreadcrumB\PageSettings\Page_Settings;
-define( "HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE", plugin_dir_url( __FILE__ ) . "assets/public" );
-define( "HOLEB_ASFSK_ASSETS_ADMIN_DIR_FILE", plugin_dir_url( __FILE__ ) . "assets/admin" );
+use GRSTBCMBreadcrumB\PageSettings\Page_Settings;
+define( "GRSTBCMB_ASFSK_ASSETS_PUBLIC_DIR_FILE", plugin_dir_url( __FILE__ ) . "assets/public" );
+define( "GRSTBCMB_ASFSK_ASSETS_ADMIN_DIR_FILE", plugin_dir_url( __FILE__ ) . "assets/admin" );
 
-class ClassHOLEBreadcrumBBoots {
+class ClassGRSTBCMBreadcrumBBoots {
 
 	private static $_instance = null;
 
@@ -37,7 +37,7 @@ class ClassHOLEBreadcrumBBoots {
 
 		// Register Widgets
 		// From PowerPack
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\HOLEBreadcrumBWidget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\GRSTBCMBreadcrumBWidget() );
 	}
 
 	private function add_page_settings_controls() {
@@ -58,8 +58,8 @@ class ClassHOLEBreadcrumBBoots {
 
 	public function grstbcmb_all_assets_for_the_public(){
 		$all_css_js_file = array(
-			'grstbcmb-breadcrumb-style-decorating' => array('grstbcmb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/decorating.css'),
-			'grstbcmb-breadcrumb-style' => array('grstbcmb_path_define'=>HOLEB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/style.css'),
+			'grstbcmb-breadcrumb-style-decorating' => array('grstbcmb_path_define'=>GRSTBCMB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/decorating.css'),
+			'grstbcmb-breadcrumb-style' => array('grstbcmb_path_define'=>GRSTBCMB_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/css/style.css'),
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
 			wp_enqueue_style( $handle, $fileinfo['grstbcmb_path_define'], null, '1.0', 'all');
@@ -68,7 +68,7 @@ class ClassHOLEBreadcrumBBoots {
 
 	public function grstbcmb_all_assets_for_elementor_editor_admin(){
 		$all_css_js_file = array(
-			'grstbcmb_breadcrumb_admin_icon_css' => array('grstbcmb_path_admin_define'=>HOLEB_ASFSK_ASSETS_ADMIN_DIR_FILE . '/icon.css'),
+			'grstbcmb_breadcrumb_admin_icon_css' => array('grstbcmb_path_admin_define'=>GRSTBCMB_ASFSK_ASSETS_ADMIN_DIR_FILE . '/icon.css'),
 		);
 
 		foreach($all_css_js_file as $handle => $fileinfo){
@@ -97,4 +97,4 @@ class ClassHOLEBreadcrumBBoots {
 }
 
 // Instantiate Plugin Class
-ClassHOLEBreadcrumBBoots::instance();
+ClassGRSTBCMBreadcrumBBoots::instance();

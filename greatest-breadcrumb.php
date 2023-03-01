@@ -13,7 +13,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 require_once ( plugin_dir_path(__FILE__) ) . '/includes/requires-check.php';
 
-final class Final_HOLEB_Breadcrumb{ 
+final class Final_GRSTBCMB_Breadcrumb{ 
 
 	const VERSION = '1.0';
 
@@ -90,5 +90,5 @@ final class Final_HOLEB_Breadcrumb{
 }
 
 // Instantiate greatest-breadcrumb.
-new Final_HOLEB_Breadcrumb();
+new Final_GRSTBCMB_Breadcrumb();
 remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );

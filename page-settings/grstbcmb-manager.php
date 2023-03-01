@@ -1,5 +1,5 @@
 <?php
-namespace HOLEBreadcrumB\PageSettings;
+namespace GRSTBCMBreadcrumB\PageSettings;
 
 use Elementor\Controls_Manager;
 use Elementor\Core\DocumentTypes\PageBase;
