@@ -13,7 +13,7 @@ use Elementor\Core\Schemes\Color as Scheme_Color;
 if (!defined('ABSPATH')){ 
 	exit; 
 } // Exit if accessed directly
-// Ferdaus sk
+
 class HOLEBreadcrumBWidget extends Widget_Base{
 
     public function get_name(){
