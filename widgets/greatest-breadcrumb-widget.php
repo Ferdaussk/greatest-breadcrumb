@@ -17,10 +17,10 @@ if (!defined('ABSPATH')){
 class HOLEBreadcrumBWidget extends Widget_Base{
 
     public function get_name(){
-        return esc_html__('HoleBreadcrumb', 'hole-breadcrumb');
+        return esc_html__('GreatestBreadcrumb', 'greatest-breadcrumb');
     }
     public function get_title(){
-        return esc_html__('Hole Breadcrumb', 'hole-breadcrumb');
+        return esc_html__('Greatest Breadcrumb', 'greatest-breadcrumb');
     }
     public function get_icon(){
         return 'holeb-breadcrumb-icon eicon-product-breadcrumbs';
@@ -37,37 +37,37 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_section(
 			'section_breadcrumbs',
 			array(
-				'label' => esc_html__( 'Content Settings', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Content Settings', 'greatest-breadcrumb' ),
 			)
 		);
 		$this->add_control(
 			'breadcrumb_presets_style',
 			[
-				'label' => esc_html__( 'Select Style', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Select Style', 'greatest-breadcrumb' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'style1',
 				'options' => [
-					'style1' => esc_html__( 'Style 1', 'hole-breadcrumb' ),
-					'style2' => esc_html__( 'Style 2', 'hole-breadcrumb' ),
-					'style3' => esc_html__( 'Style 3', 'hole-breadcrumb' ),
-					'style4' => esc_html__( 'Style 4', 'hole-breadcrumb' ),
-					'style5' => esc_html__( 'Style 5', 'hole-breadcrumb' ),
-					'style6' => esc_html__( 'Style 6', 'hole-breadcrumb' ),
-					'style7' => esc_html__( 'Style 7', 'hole-breadcrumb' ),
-					'style8' => esc_html__( 'Style 8', 'hole-breadcrumb' ),
-					'style9' => esc_html__( 'Style 9', 'hole-breadcrumb' ),
-					'style10' => esc_html__( 'Style 10', 'hole-breadcrumb' ),
-					'style11' => esc_html__( 'Style 11', 'hole-breadcrumb' ),
-					'style12' => esc_html__( 'Style 12', 'hole-breadcrumb' ),
-					'style13' => esc_html__( 'Style 13', 'hole-breadcrumb' ),
-					'style14' => esc_html__( 'Style 14', 'hole-breadcrumb' ),
-					'style15' => esc_html__( 'Style 15', 'hole-breadcrumb' ),
-					'style16' => esc_html__( 'Style 16', 'hole-breadcrumb' ),
-					'style17' => esc_html__( 'Style 17', 'hole-breadcrumb' ),
-					'style18' => esc_html__( 'Style 18', 'hole-breadcrumb' ),
-					'style19' => esc_html__( 'Style 19', 'hole-breadcrumb' ),
-					'style20' => esc_html__( 'Style 20', 'hole-breadcrumb' ),
-					'style21' => esc_html__( 'Style 21', 'hole-breadcrumb' ),
+					'style1' => esc_html__( 'Style 1', 'greatest-breadcrumb' ),
+					'style2' => esc_html__( 'Style 2', 'greatest-breadcrumb' ),
+					'style3' => esc_html__( 'Style 3', 'greatest-breadcrumb' ),
+					'style4' => esc_html__( 'Style 4', 'greatest-breadcrumb' ),
+					'style5' => esc_html__( 'Style 5', 'greatest-breadcrumb' ),
+					'style6' => esc_html__( 'Style 6', 'greatest-breadcrumb' ),
+					'style7' => esc_html__( 'Style 7', 'greatest-breadcrumb' ),
+					'style8' => esc_html__( 'Style 8', 'greatest-breadcrumb' ),
+					'style9' => esc_html__( 'Style 9', 'greatest-breadcrumb' ),
+					'style10' => esc_html__( 'Style 10', 'greatest-breadcrumb' ),
+					'style11' => esc_html__( 'Style 11', 'greatest-breadcrumb' ),
+					'style12' => esc_html__( 'Style 12', 'greatest-breadcrumb' ),
+					'style13' => esc_html__( 'Style 13', 'greatest-breadcrumb' ),
+					'style14' => esc_html__( 'Style 14', 'greatest-breadcrumb' ),
+					'style15' => esc_html__( 'Style 15', 'greatest-breadcrumb' ),
+					'style16' => esc_html__( 'Style 16', 'greatest-breadcrumb' ),
+					'style17' => esc_html__( 'Style 17', 'greatest-breadcrumb' ),
+					'style18' => esc_html__( 'Style 18', 'greatest-breadcrumb' ),
+					'style19' => esc_html__( 'Style 19', 'greatest-breadcrumb' ),
+					'style20' => esc_html__( 'Style 20', 'greatest-breadcrumb' ),
+					'style21' => esc_html__( 'Style 21', 'greatest-breadcrumb' ),
 				],
 			]
 		);
@@ -75,11 +75,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'show_home',
 			array(
-				'label'        => esc_html__( 'Show Home', 'hole-breadcrumb' ),
+				'label'        => esc_html__( 'Show Home', 'greatest-breadcrumb' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'default'      => 'yes',
-				'label_on'     => esc_html__( 'On', 'hole-breadcrumb' ),
-				'label_off'    => esc_html__( 'Off', 'hole-breadcrumb' ),
+				'label_on'     => esc_html__( 'On', 'greatest-breadcrumb' ),
+				'label_off'    => esc_html__( 'Off', 'greatest-breadcrumb' ),
 				'return_value' => 'yes',
 			)
 		);
@@ -87,9 +87,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'home_text',
 			array(
-				'label'     => esc_html__( 'Home Text', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Home Text', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => esc_html__( 'Home', 'hole-breadcrumb' ),
+				'default'   => esc_html__( 'Home', 'greatest-breadcrumb' ),
 				'dynamic'   => array(
 					'active'     => true,
 				),
@@ -102,7 +102,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'select_home_icon',
 			array(
-				'label'            => esc_html__( 'Home Icon', 'hole-breadcrumb' ),
+				'label'            => esc_html__( 'Home Icon', 'greatest-breadcrumb' ),
 				'type'             => Controls_Manager::ICONS,
 				'label_block'      => false,
 				'skin'             => 'inline',
@@ -119,20 +119,20 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_responsive_control(
 			'align',
 			array(
-				'label'                => esc_html__( 'Alignment', 'hole-breadcrumb' ),
+				'label'                => esc_html__( 'Alignment', 'greatest-breadcrumb' ),
 				'type'                 => Controls_Manager::CHOOSE,
 				'default'              => '',
 				'options'              => array(
 					'left'   => array(
-						'title' => esc_html__( 'Left', 'hole-breadcrumb' ),
+						'title' => esc_html__( 'Left', 'greatest-breadcrumb' ),
 						'icon'  => 'eicon-h-align-left',
 					),
 					'center' => array(
-						'title' => esc_html__( 'Center', 'hole-breadcrumb' ),
+						'title' => esc_html__( 'Center', 'greatest-breadcrumb' ),
 						'icon'  => 'eicon-h-align-center',
 					),
 					'right'  => array(
-						'title' => esc_html__( 'Right', 'hole-breadcrumb' ),
+						'title' => esc_html__( 'Right', 'greatest-breadcrumb' ),
 						'icon'  => 'eicon-h-align-right',
 					),
 				),
@@ -151,19 +151,19 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_section(
 			'section_separator',
 			array(
-				'label'     => esc_html__( 'Separate Indicator', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Separate Indicator', 'greatest-breadcrumb' ),
 			)
 		);
 
 		$this->add_control(
 			'separator_type',
 			array(
-				'label'     => esc_html__( 'Separate Type', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Separate Type', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'icon',
 				'options'   => array(
-					'text' => esc_html__( 'Text', 'hole-breadcrumb' ),
-					'icon' => esc_html__( 'Icon', 'hole-breadcrumb' ),
+					'text' => esc_html__( 'Text', 'greatest-breadcrumb' ),
+					'icon' => esc_html__( 'Icon', 'greatest-breadcrumb' ),
 				),
 			)
 		);
@@ -171,9 +171,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separator_text',
 			array(
-				'label'     => esc_html__( 'Separator', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Separator', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => esc_html__( '>', 'hole-breadcrumb' ),
+				'default'   => esc_html__( '>', 'greatest-breadcrumb' ),
 				'condition' => array(
 					'separator_type'   => 'text',
 				),
@@ -183,7 +183,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'select_separator_icon',
 			array(
-				'label'            => esc_html__( 'Indicator', 'hole-breadcrumb' ),
+				'label'            => esc_html__( 'Indicator', 'greatest-breadcrumb' ),
 				'type'             => Controls_Manager::ICONS,
 				'label_block'      => false,
 				'skin'             => 'inline',
@@ -223,7 +223,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_section(
 			'section_breadcrumbs_style',
 			array(
-				'label' => esc_html__( 'Items Style', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Items Style', 'greatest-breadcrumb' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -231,7 +231,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'breadcrumbs_items_spacing',
 			array(
-				'label'     => esc_html__( 'Spacing', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Spacing', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::SLIDER,
 				'default'   => array(
 					'size' => 10,
@@ -243,8 +243,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				),
 				'selectors' => array(
 					'{{WRAPPER}} .holeb-breadcrumbs' => 'margin-left: -{{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .holeb-breadcrumbs.holeb-breadcrumbs-hole-breadcrumb > li' => 'margin-left: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'margin-left: {{SIZE}}{{UNIT}}; margin-right: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .holeb-breadcrumbs.holeb-breadcrumbs-greatest-breadcrumb > li' => 'margin-left: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin-left: {{SIZE}}{{UNIT}}; margin-right: {{SIZE}}{{UNIT}};',
 				),
 			)
 		);
@@ -254,18 +254,18 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_tab(
 			'tab_breadcrumbs_normal',
 			array(
-				'label' => esc_html__( 'Normal', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Normal', 'greatest-breadcrumb' ),
 			)
 		);
 
 		$this->add_control(
 			'breadcrumbs_color',
 			array(
-				'label'     => esc_html__( 'Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .holeb-breadcrumbs-crumb .holeb-icon svg' => 'fill: {{VALUE}}',
 				),
 			)
@@ -274,11 +274,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'breadcrumbs_background_color',
 			array(
-				'label'     => esc_html__( 'Background Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -287,8 +287,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'breadcrumbs_typography',
-				'label'    => esc_html__( 'Typography', 'hole-breadcrumb' ),
-				'selector' => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)',
+				'label'    => esc_html__( 'Typography', 'greatest-breadcrumb' ),
+				'selector' => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
 			)
 		);
 
@@ -296,21 +296,21 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Border::get_type(),
 			array(
 				'name'        => 'breadcrumbs_border',
-				'label'       => esc_html__( 'Border', 'hole-breadcrumb' ),
+				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
-				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)',
+				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
 			)
 		);
 
 		$this->add_control(
 			'breadcrumbs_border_radius',
 			array(
-				'label'      => esc_html__( 'Border Radius', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Border Radius', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -320,18 +320,18 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_tab(
 			'tab_breadcrumbs_hover',
 			array(
-				'label' => esc_html__( 'Hover', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Hover', 'greatest-breadcrumb' ),
 			)
 		);
 
 		$this->add_control(
 			'breadcrumbs_color_hover',
 			array(
-				'label'     => esc_html__( 'Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a:hover' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover .holeb-icon svg' => 'fill: {{VALUE}}',
 				),
 			)
@@ -340,11 +340,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'breadcrumbs_background_color_hover',
 			array(
-				'label'     => esc_html__( 'Background Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a:hover' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a:hover' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -355,23 +355,23 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_responsive_control(
 			'breadcrumbs_padding',
 			array(
-				'label'      => esc_html__( 'Padding', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Padding', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'separator'  => 'before',
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
 		$this->add_responsive_control(
 			'breadcrumbs_margin',
 			array(
-				'label'      => esc_html__( 'Margin', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Margin', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-hole-breadcrumb) span:not(.separator)' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -380,7 +380,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_section(
 			'section_separators_style',
 			array(
-				'label'     => esc_html__( 'Indicator', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Indicator', 'greatest-breadcrumb' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -388,7 +388,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separators_color',
 			array(
-				'label'     => esc_html__( 'Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
@@ -401,7 +401,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separators_background_color',
 			array(
-				'label'     => esc_html__( 'Background Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
@@ -414,7 +414,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Typography::get_type(),
 			array(
 				'name'      => 'separators_typography',
-				'label'     => esc_html__( 'Typography', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Typography', 'greatest-breadcrumb' ),
 				'selector'  => '{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator',
 			)
 		);
@@ -423,7 +423,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Border::get_type(),
 			array(
 				'name'        => 'separators_border',
-				'label'       => esc_html__( 'Border', 'hole-breadcrumb' ),
+				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
 				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator',
@@ -433,7 +433,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'separators_border_radius',
 			array(
-				'label'      => esc_html__( 'Border Radius', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Border Radius', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
@@ -445,7 +445,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_responsive_control(
 			'separators_padding',
 			array(
-				'label'      => esc_html__( 'Padding', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Padding', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
@@ -458,7 +458,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->start_controls_section(
 			'section_current_style',
 			array(
-				'label'     => esc_html__( 'Current', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Current', 'greatest-breadcrumb' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -466,7 +466,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'current_color',
 			array(
-				'label'     => esc_html__( 'Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
@@ -478,7 +478,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'current_background_color',
 			array(
-				'label'     => esc_html__( 'Background Color', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
@@ -491,7 +491,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Typography::get_type(),
 			array(
 				'name'      => 'current_typography',
-				'label'     => esc_html__( 'Typography', 'hole-breadcrumb' ),
+				'label'     => esc_html__( 'Typography', 'greatest-breadcrumb' ),
 				'selector'  => '{{WRAPPER}} .holeb-breadcrumbs-crumb-current',
 			)
 		);
@@ -500,7 +500,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			Group_Control_Border::get_type(),
 			array(
 				'name'        => 'current_border',
-				'label'       => esc_html__( 'Border', 'hole-breadcrumb' ),
+				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
 				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-crumb-current',
@@ -510,7 +510,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'current_border_radius',
 			array(
-				'label'      => esc_html__( 'Border Radius', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Border Radius', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
@@ -522,7 +522,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'current_padding',
 			array(
-				'label'      => esc_html__( 'Padding', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Padding', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
@@ -534,7 +534,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 		$this->add_control(
 			'current_margin',
 			array(
-				'label'      => esc_html__( 'Margin', 'hole-breadcrumb' ),
+				'label'      => esc_html__( 'Margin', 'greatest-breadcrumb' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
@@ -548,7 +548,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		echo '<div class="holeb_'.$settings['breadcrumb_presets_style'].'">';
-		$name_herE = 'hole-breadcrumb';
+		$name_herE = 'greatest-breadcrumb';
 		if ( $name_herE == true ) {
 			$query = $this->get_query();
 			if ( $query ) {
@@ -582,7 +582,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 	protected function render_breadcrumbs( $query = false ) {
 		$settings = $this->get_settings_for_display();
 
-		$this->add_render_attribute( 'breadcrumbs', 'class', array( 'holeb-breadcrumbs', 'holeb-breadcrumbs-hole-breadcrumb' ) );
+		$this->add_render_attribute( 'breadcrumbs', 'class', array( 'holeb-breadcrumbs', 'holeb-breadcrumbs-greatest-breadcrumb' ) );
 		$this->add_render_attribute( 'breadcrumbs-item', 'class', 'holeb-breadcrumbs-item' );
 		$custom_taxonomy = 'product_cat';
 		global $post, $wp_query;
@@ -925,15 +925,15 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					)
 				);
 
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><a ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</a></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><a ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</a></li>';
 
 				$this->render_separator();
 
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month' ) ) . '><a ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</a></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month' ) ) . '><a ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</a></li>';
 
 				$this->render_separator();
 
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-day' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-day-crumb' ) ) . '> ' . wp_kses_post( get_the_time( 'jS' ) ) . ' ' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-day' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-day-crumb' ) ) . '> ' . wp_kses_post( get_the_time( 'jS' ) ) . ' ' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</strong></li>';
 
 			} elseif ( $query->is_month() ) {
 				$this->add_render_attribute(
@@ -972,11 +972,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					)
 				);
 
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</strong></li>';
 
 				$this->render_separator();
 
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-month-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</strong></li>';
 
 			} elseif ( $query->is_year() ) {
 
@@ -999,7 +999,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						),
 					)
 				);
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'hole-breadcrumb' ) . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-year-crumb' ) ) . '>' . wp_kses_post( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'greatest-breadcrumb' ) . '</strong></li>';
 
 			} elseif ( $query->is_author() ) {
 
@@ -1026,7 +1026,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						),
 					)
 				);
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-author' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-author-bread' ) ) . '>' . esc_attr__( 'Author:', 'hole-breadcrumb' ) . ' ' . esc_attr( $userdata->display_name ) . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-author' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-author-bread' ) ) . '>' . esc_attr__( 'Author:', 'greatest-breadcrumb' ) . ' ' . esc_attr( $userdata->display_name ) . '</strong></li>';
 			} elseif ( get_query_var( 'paged' ) ) {
 
 				$this->add_render_attribute(
@@ -1044,11 +1044,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 								'holeb-breadcrumbs-crumb-current',
 								'holeb-breadcrumbs-crumb-current-' . get_query_var( 'paged' ),
 							),
-							'title' => esc_html__( 'Page', 'hole-breadcrumb' ) . ' ' . get_query_var( 'paged' ),
+							'title' => esc_html__( 'Page', 'greatest-breadcrumb' ) . ' ' . get_query_var( 'paged' ),
 						),
 					)
 				);
-				echo '<li id="hksdh_ferdaus" ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged-bread' ) ) . '>' . esc_attr__( 'Page', 'hole-breadcrumb' ) . ' ' . wp_kses_post( get_query_var( 'paged' ) ) . '</strong></li>';
+				echo '<li id="hksdh_ferdaus" ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-paged-bread' ) ) . '>' . esc_attr__( 'Page', 'greatest-breadcrumb' ) . ' ' . wp_kses_post( get_query_var( 'paged' ) ) . '</strong></li>';
 
 			} elseif ( $query->is_search() ) {
 				$this->add_render_attribute(
@@ -1066,11 +1066,11 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 								'holeb-breadcrumbs-crumb-current',
 								'holeb-breadcrumbs-crumb-current-' . get_search_query(),
 							),
-							'title' => esc_html__( 'Search results for:', 'hole-breadcrumb' ) . ' ' . get_search_query(),
+							'title' => esc_html__( 'Search results for:', 'greatest-breadcrumb' ) . ' ' . get_search_query(),
 						),
 					)
 				);
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-search' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-search-crumb' ) ) . '>' . esc_attr__( 'Search results for:', 'hole-breadcrumb' ) . ' ' . get_search_query() . '</strong></li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-search' ) ) . '><strong ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-search-crumb' ) ) . '>' . esc_attr__( 'Search results for:', 'greatest-breadcrumb' ) . ' ' . get_search_query() . '</strong></li>';
 			} elseif ( $query->is_home() ) {
 				$blog_label = 'Blog';
 				if ( $blog_label ) {
@@ -1105,7 +1105,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					)
 				);
 				// 404 page
-				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-error' ) ) . '>' . esc_attr__( 'Error 404', 'hole-breadcrumb' ) . '</li>';
+				echo '<li ' . wp_kses_post( $this->get_render_attribute_string( 'breadcrumbs-item-error' ) ) . '>' . esc_attr__( 'Error 404', 'greatest-breadcrumb' ) . '</li>';
 			}
 			echo '</ul>';
 		}

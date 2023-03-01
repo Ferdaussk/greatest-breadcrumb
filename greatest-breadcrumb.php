@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Hole Breadcrumb
- * Description: Hole Breadcrumb plugin with 23+ types of  Breadcrumb Effects for Elementor.
- * Plugin URI:  https://bwdplugins.com/plugins/hole-breadcrumb
+ * Plugin Name: Greatest Breadcrumb
+ * Description: Greatest Breadcrumb plugin with 23+ types of  Breadcrumb Effects for Elementor.
+ * Plugin URI:  https://bwdplugins.com/plugins/greatest-breadcrumb
  * Version:     1.0
  * Author:      Best WP Developer
  * Author URI:  https://bestwpdeveloper.com/
- * Text Domain: hole-breadcrumb
+ * Text Domain: greatest-breadcrumb
  * Elementor tested up to: 3.0.0
  */
 
@@ -31,7 +31,7 @@ final class Final_HOLEB_Breadcrumb{
 
 
 	public function holeb_loaded_textdomain() {
-		load_plugin_textdomain( 'hole-breadcrumb' );
+		load_plugin_textdomain( 'greatest-breadcrumb' );
 	}
 
 	public function holeb_init() {
@@ -64,13 +64,13 @@ final class Final_HOLEB_Breadcrumb{
 		}
 
 		$message = sprintf(
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'hole-breadcrumb' ),
-			'<strong>' . esc_html__( 'Hole Breadcrumb', 'hole-breadcrumb' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'hole-breadcrumb' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'greatest-breadcrumb' ),
+			'<strong>' . esc_html__( 'Greatest Breadcrumb', 'greatest-breadcrumb' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'greatest-breadcrumb' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
-		printf( '<div class="notice notice-warning is-dismissible"><p>' . esc_html__('%1$s', 'hole-breadcrumb') . '</p></div>', $message );
+		printf( '<div class="notice notice-warning is-dismissible"><p>' . esc_html__('%1$s', 'greatest-breadcrumb') . '</p></div>', $message );
 	}
 
 	public function holeb_admin_notice_minimum_php_version() {
@@ -79,16 +79,16 @@ final class Final_HOLEB_Breadcrumb{
 		}
 
 		$message = sprintf(
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'hole-breadcrumb' ),
-			'<strong>' . esc_html__( 'Hole Breadcrumb', 'hole-breadcrumb' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'hole-breadcrumb' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'greatest-breadcrumb' ),
+			'<strong>' . esc_html__( 'Greatest Breadcrumb', 'greatest-breadcrumb' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'greatest-breadcrumb' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 
-		printf( '<div class="notice notice-warning is-dismissible"><p>' . esc_html__('%1$s', 'hole-breadcrumb') . '</p></div>', $message );
+		printf( '<div class="notice notice-warning is-dismissible"><p>' . esc_html__('%1$s', 'greatest-breadcrumb') . '</p></div>', $message );
 	}
 }
 
-// Instantiate hole-breadcrumb.
+// Instantiate greatest-breadcrumb.
 new Final_HOLEB_Breadcrumb();
 remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );

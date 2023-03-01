@@ -28,7 +28,7 @@ class ClassHOLEBreadcrumBBoots {
 	}
 
 	private function include_widgets_files() {
-		require_once( __DIR__ . '/widgets/hole-breadcrumb-widget.php' );
+		require_once( __DIR__ . '/widgets/greatest-breadcrumb-widget.php' );
 	}
 
 	public function holeb_register_widgets() {
@@ -50,7 +50,7 @@ class ClassHOLEBreadcrumBBoots {
 		$elements_manager->add_category(
 			'bwdthebest_general_category',
 			[
-				'title' => esc_html__( 'BWD General Group', 'hole-breadcrumb' ),
+				'title' => esc_html__( 'BWD General Group', 'greatest-breadcrumb' ),
 				'icon' => 'eicon-person',
 			]
 		);

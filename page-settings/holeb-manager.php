@@ -18,7 +18,7 @@ class Page_Settings {
 	}
 
 	public function holeb_breadcrumb_add_panel_tab() {
-		Controls_Manager::add_tab( self::PANEL_TAB, esc_html__( 'Hole Breadcrumb', 'hole-breadcrumb' ) );
+		Controls_Manager::add_tab( self::PANEL_TAB, esc_html__( 'Greatest Breadcrumb', 'greatest-breadcrumb' ) );
 	}
 
 	public function holeb_breadcrumb_register_document_controls( $document ) {
@@ -29,7 +29,7 @@ class Page_Settings {
 		$document->start_controls_section(
 			'holeb_breadcrumb_new_section',
 			[
-				'label' => esc_html__( 'Settings', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Settings', 'greatest-breadcrumb' ),
 				'tab' => self::PANEL_TAB,
 			]
 		);
@@ -37,9 +37,9 @@ class Page_Settings {
 		$document->add_control(
 			'holeb_breadcrumb_text',
 			[
-				'label' => esc_html__( 'Title', 'hole-breadcrumb' ),
+				'label' => esc_html__( 'Title', 'greatest-breadcrumb' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Title', 'hole-breadcrumb' ),
+				'default' => esc_html__( 'Title', 'greatest-breadcrumb' ),
 			]
 		);
 
