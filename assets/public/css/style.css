@@ -1,5 +1,5 @@
 
-.holeb-breadcrumbs {
+.grstbcmb-breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,17 +13,17 @@
   padding: 0;
   margin-left: -10px;
 }
-.holeb-breadcrumbs > li {
+.grstbcmb-breadcrumbs > li {
   margin-left: 10px;
 }
-.holeb-breadcrumbs p {
+.grstbcmb-breadcrumbs p {
   margin-bottom: 0;
 }
-.holeb-breadcrumbs a,
-.holeb-breadcrumbs strong {
+.grstbcmb-breadcrumbs a,
+.grstbcmb-breadcrumbs strong {
   display: inline-block;
 }
-.holeb-breadcrumbs a span {
+.grstbcmb-breadcrumbs a span {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
@@ -37,7 +37,7 @@
   margin: 0px !important;
 }
 /* Another */
-.holeb-breadcrumbs {
+.grstbcmb-breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,16 +51,16 @@
   padding: 0;
   margin-right: -10px;
 }
-.holeb-breadcrumbs > li {
+.grstbcmb-breadcrumbs > li {
   margin-right: 10px; }
-.holeb-breadcrumbs p {
+.grstbcmb-breadcrumbs p {
   margin-bottom: 0;
 }
-.holeb-breadcrumbs a,
-.holeb-breadcrumbs strong {
+.grstbcmb-breadcrumbs a,
+.grstbcmb-breadcrumbs strong {
   display: inline-block;
 }
-.holeb-breadcrumbs a span {
+.grstbcmb-breadcrumbs a span {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
@@ -73,7 +73,7 @@
   border-radius: 0px !important;
   margin: 0px !important;
 }
-.holeb-breadcrumbs-crumb-current{
+.grstbcmb-breadcrumbs-crumb-current{
   color: #000000;
   font-weight: 400;
 }

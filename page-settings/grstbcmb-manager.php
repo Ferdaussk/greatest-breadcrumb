@@ -13,21 +13,21 @@ class Page_Settings {
 	const PANEL_TAB = 'new-tab';
 
 	public function __construct() {
-		add_action( 'elementor/init', [ $this, 'holeb_breadcrumb_add_panel_tab' ] );
-		add_action( 'elementor/documents/register_controls', [ $this, 'holeb_breadcrumb_register_document_controls' ] );
+		add_action( 'elementor/init', [ $this, 'grstbcmb_breadcrumb_add_panel_tab' ] );
+		add_action( 'elementor/documents/register_controls', [ $this, 'grstbcmb_breadcrumb_register_document_controls' ] );
 	}
 
-	public function holeb_breadcrumb_add_panel_tab() {
+	public function grstbcmb_breadcrumb_add_panel_tab() {
 		Controls_Manager::add_tab( self::PANEL_TAB, esc_html__( 'Greatest Breadcrumb', 'greatest-breadcrumb' ) );
 	}
 
-	public function holeb_breadcrumb_register_document_controls( $document ) {
+	public function grstbcmb_breadcrumb_register_document_controls( $document ) {
 		if ( ! $document instanceof PageBase || ! $document::get_property( 'has_elements' ) ) {
 			return;
 		}
 
 		$document->start_controls_section(
-			'holeb_breadcrumb_new_section',
+			'grstbcmb_breadcrumb_new_section',
 			[
 				'label' => esc_html__( 'Settings', 'greatest-breadcrumb' ),
 				'tab' => self::PANEL_TAB,
@@ -35,7 +35,7 @@ class Page_Settings {
 		);
 
 		$document->add_control(
-			'holeb_breadcrumb_text',
+			'grstbcmb_breadcrumb_text',
 			[
 				'label' => esc_html__( 'Title', 'greatest-breadcrumb' ),
 				'type' => Controls_Manager::TEXT,

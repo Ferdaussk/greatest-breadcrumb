@@ -3,13 +3,13 @@ if (!defined( 'ABSPATH')) {
     exit;
 }
 // For elementor
-function holeb_breadcrumb_register_required_plugins() {
+function grstbcmb_breadcrumb_register_required_plugins() {
     $check_display = get_current_screen();
 	if (isset( $check_display->parent_file) && 'plugins.php' === $check_display->parent_file && 'update' === $check_display->id) {
 		return;
 	}
 	$bwd_plugin_plugin = 'elementor/elementor.php';
-	if (holeb_addon_install()) {
+	if (grstbcmb_addon_install()) {
 		if (!current_user_can('activate_plugins')) {
 			return;
 		}
@@ -27,7 +27,7 @@ function holeb_breadcrumb_register_required_plugins() {
 	echo '<div class="notice notice-error"><p>' . $bwd_plugin_the_notice_is . '</p></div>';
 }
 
-function holeb_admin_notice_minimum_elementor_version() {
+function grstbcmb_admin_notice_minimum_elementor_version() {
 
 	if (!current_user_can('update_plugins')) {
 		return;
@@ -39,7 +39,7 @@ function holeb_admin_notice_minimum_elementor_version() {
 	echo '<div class="notice notice-error">' . $bwd_plugin_the_notice_is . '</div>';
 }
 
-function holeb_addon_install() {
+function grstbcmb_addon_install() {
     $file_path = 'elementor/elementor.php';
     $installed_plugins = get_plugins();
 

@@ -23,42 +23,42 @@ final class Final_HOLEB_Breadcrumb{
 
 	public function __construct() {
 		// Load translation
-		add_action( 'holeb_init', array( $this, 'holeb_loaded_textdomain' ) );
+		add_action( 'grstbcmb_init', array( $this, 'grstbcmb_loaded_textdomain' ) );
 
-		// holeb_init Plugin
-		add_action( 'plugins_loaded', array( $this, 'holeb_init' ) );
+		// grstbcmb_init Plugin
+		add_action( 'plugins_loaded', array( $this, 'grstbcmb_init' ) );
 	}
 
 
-	public function holeb_loaded_textdomain() {
+	public function grstbcmb_loaded_textdomain() {
 		load_plugin_textdomain( 'greatest-breadcrumb' );
 	}
 
-	public function holeb_init() {
+	public function grstbcmb_init() {
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
 			// elementor activation check
-			add_action( 'admin_notices','holeb_breadcrumb_register_required_plugins');
+			add_action( 'admin_notices','grstbcmb_breadcrumb_register_required_plugins');
 			return;
 		}
 
 		// Check for required Elementor version
 		if ( ! version_compare( ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=' ) ) {
-			add_action( 'admin_notices', array( $this, 'holeb_admin_notice_minimum_elementor_version' ) );
+			add_action( 'admin_notices', array( $this, 'grstbcmb_admin_notice_minimum_elementor_version' ) );
 			return;
 		}
 
 		// Check for required PHP version
 		if ( version_compare( PHP_VERSION, self::MINIMUM_PHP_VERSION, '<' ) ) {
-			add_action( 'admin_notices', array( $this, 'holeb_admin_notice_minimum_php_version' ) );
+			add_action( 'admin_notices', array( $this, 'grstbcmb_admin_notice_minimum_php_version' ) );
 			return;
 		}
 
 		// Once we get here, We have passed all validation checks so we can safely include our plugin
-		require_once( 'holeb_plugin_boots.php' );
+		require_once( 'grstbcmb_plugin_boots.php' );
 	}
 
-	public function holeb_admin_notice_minimum_elementor_version() {
+	public function grstbcmb_admin_notice_minimum_elementor_version() {
 		if ( isset( $_GET['activate'] ) ) {
 			unset( $_GET['activate'] );
 		}
@@ -73,7 +73,7 @@ final class Final_HOLEB_Breadcrumb{
 		printf( '<div class="notice notice-warning is-dismissible"><p>' . esc_html__('%1$s', 'greatest-breadcrumb') . '</p></div>', $message );
 	}
 
-	public function holeb_admin_notice_minimum_php_version() {
+	public function grstbcmb_admin_notice_minimum_php_version() {
 		if ( isset( $_GET['activate'] ) ) {
 			unset( $_GET['activate'] );
 		}

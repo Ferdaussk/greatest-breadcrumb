@@ -23,7 +23,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
         return esc_html__('Greatest Breadcrumb', 'greatest-breadcrumb');
     }
     public function get_icon(){
-        return 'holeb-breadcrumb-icon eicon-product-breadcrumbs';
+        return 'grstbcmb-breadcrumb-icon eicon-product-breadcrumbs';
     }
     public function get_categories(){
         return ['bwdthebest_general_category'];
@@ -142,7 +142,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					'right'  => 'flex-end',
 				),
 				'selectors'            => array(
-					'{{WRAPPER}} .holeb-breadcrumbs' => 'justify-content: {{VALUE}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs' => 'justify-content: {{VALUE}};',
 				),
 			)
 		);
@@ -242,9 +242,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					),
 				),
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs' => 'margin-left: -{{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .holeb-breadcrumbs.holeb-breadcrumbs-greatest-breadcrumb > li' => 'margin-left: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin-left: {{SIZE}}{{UNIT}}; margin-right: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs' => 'margin-left: -{{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs.grstbcmb-breadcrumbs-greatest-breadcrumb > li' => 'margin-left: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin-left: {{SIZE}}{{UNIT}}; margin-right: {{SIZE}}{{UNIT}};',
 				),
 			)
 		);
@@ -265,8 +265,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb .holeb-icon svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb .grstbcmb-icon svg' => 'fill: {{VALUE}}',
 				),
 			)
 		);
@@ -278,7 +278,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -288,7 +288,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			array(
 				'name'     => 'breadcrumbs_typography',
 				'label'    => esc_html__( 'Typography', 'greatest-breadcrumb' ),
-				'selector' => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
+				'selector' => '{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
 			)
 		);
 
@@ -299,7 +299,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
-				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
+				'selector'    => '{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)',
 			)
 		);
 
@@ -310,7 +310,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -331,8 +331,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a:hover' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover .holeb-icon svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-link:hover .grstbcmb-icon svg' => 'fill: {{VALUE}}',
 				),
 			)
 		);
@@ -344,7 +344,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a:hover' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a:hover' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -360,7 +360,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'size_units' => array( 'px', '%' ),
 				'separator'  => 'before',
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -371,7 +371,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .holeb-breadcrumbs:not(.holeb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -392,8 +392,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .holeb-breadcrumbs-separator svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-separator svg' => 'fill: {{VALUE}}',
 				),
 			)
 		);
@@ -405,7 +405,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -415,7 +415,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			array(
 				'name'      => 'separators_typography',
 				'label'     => esc_html__( 'Typography', 'greatest-breadcrumb' ),
-				'selector'  => '{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator',
+				'selector'  => '{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator',
 			)
 		);
 
@@ -426,7 +426,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
-				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator',
+				'selector'    => '{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator',
 			)
 		);
 
@@ -437,7 +437,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -449,7 +449,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-separator, {{WRAPPER}} .holeb-breadcrumbs .separator' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-separator, {{WRAPPER}} .grstbcmb-breadcrumbs .separator' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -470,7 +470,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-current' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current' => 'color: {{VALUE}}',
 				),
 			)
 		);
@@ -482,7 +482,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-current' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current' => 'background-color: {{VALUE}}',
 				),
 			)
 		);
@@ -492,7 +492,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			array(
 				'name'      => 'current_typography',
 				'label'     => esc_html__( 'Typography', 'greatest-breadcrumb' ),
-				'selector'  => '{{WRAPPER}} .holeb-breadcrumbs-crumb-current',
+				'selector'  => '{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current',
 			)
 		);
 
@@ -503,7 +503,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'label'       => esc_html__( 'Border', 'greatest-breadcrumb' ),
 				'placeholder' => '1px',
 				'default'     => '1px',
-				'selector'    => '{{WRAPPER}} .holeb-breadcrumbs-crumb-current',
+				'selector'    => '{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current',
 			)
 		);
 
@@ -514,7 +514,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-current' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -526,7 +526,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-current' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -538,7 +538,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%' ),
 				'selectors'  => array(
-					'{{WRAPPER}} .holeb-breadcrumbs-crumb-current' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-current' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
 			)
 		);
@@ -547,7 +547,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="holeb_'.$settings['breadcrumb_presets_style'].'">';
+		echo '<div class="grstbcmb_'.$settings['breadcrumb_presets_style'].'">';
 		$name_herE = 'greatest-breadcrumb';
 		if ( $name_herE == true ) {
 			$query = $this->get_query();
@@ -582,8 +582,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 	protected function render_breadcrumbs( $query = false ) {
 		$settings = $this->get_settings_for_display();
 
-		$this->add_render_attribute( 'breadcrumbs', 'class', array( 'holeb-breadcrumbs', 'holeb-breadcrumbs-greatest-breadcrumb' ) );
-		$this->add_render_attribute( 'breadcrumbs-item', 'class', 'holeb-breadcrumbs-item' );
+		$this->add_render_attribute( 'breadcrumbs', 'class', array( 'grstbcmb-breadcrumbs', 'grstbcmb-breadcrumbs-greatest-breadcrumb' ) );
+		$this->add_render_attribute( 'breadcrumbs-item', 'class', 'grstbcmb-breadcrumbs-item' );
 		$custom_taxonomy = 'product_cat';
 		global $post, $wp_query;
 
@@ -607,9 +607,9 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					'breadcrumbs-item-archive',
 					'class',
 					array(
-						'holeb-breadcrumbs-item',
-						'holeb-breadcrumbs-item-current',
-						'holeb-breadcrumbs-item-archive',
+						'grstbcmb-breadcrumbs-item',
+						'grstbcmb-breadcrumbs-item-current',
+						'grstbcmb-breadcrumbs-item-archive',
 					)
 				);
 
@@ -625,17 +625,17 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-cpt'       => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-cat',
-									'holeb-breadcrumbs-item-custom-post-type-' . $post_type,
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-cat',
+									'grstbcmb-breadcrumbs-item-custom-post-type-' . $post_type,
 								),
 							),
 							'breadcrumbs-item-cpt-crumb' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-link',
-									'holeb-breadcrumbs-crumb-cat',
-									'holeb-breadcrumbs-crumb-custom-post-type-' . $post_type,
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-link',
+									'grstbcmb-breadcrumbs-crumb-cat',
+									'grstbcmb-breadcrumbs-crumb-custom-post-type-' . $post_type,
 								),
 								'href'  => $post_type_archive,
 								'title' => $post_type_object->labels->name,
@@ -653,15 +653,15 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-tax'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-archive',
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-archive',
 							),
 						),
 						'breadcrumbs-item-tax-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
 							),
 						),
 					)
@@ -689,7 +689,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					$cat_display = '';
 					foreach ( $categories as $parent ) {
 						if ( ! is_wp_error( get_term_link( $parent ) ) ) {
-							$cat_display .= '<li class="holeb-breadcrumbs-item holeb-breadcrumbs-item-cat"><a class="holeb-breadcrumbs-crumb holeb-breadcrumbs-crumb-link holeb-breadcrumbs-crumb-cat" href="' . get_term_link( $parent ) . '">' . $parent->name . '</a></li>';
+							$cat_display .= '<li class="grstbcmb-breadcrumbs-item grstbcmb-breadcrumbs-item-cat"><a class="grstbcmb-breadcrumbs-crumb grstbcmb-breadcrumbs-crumb-link grstbcmb-breadcrumbs-crumb-cat" href="' . get_term_link( $parent ) . '">' . $parent->name . '</a></li>';
 							$cat_display .= $this->render_separator( false );
 						}
 					}
@@ -707,16 +707,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-post-cat' => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-current',
-									'holeb-breadcrumbs-item-' . $post->ID,
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-current',
+									'grstbcmb-breadcrumbs-item-' . $post->ID,
 								),
 							),
 							'breadcrumbs-item-post-cat-bread' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-current',
-									'holeb-breadcrumbs-crumb-' . $post->ID,
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-current',
+									'grstbcmb-breadcrumbs-crumb-' . $post->ID,
 								),
 								'title' => get_the_title(),
 							),
@@ -733,19 +733,19 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 							array(
 								'breadcrumbs-item-post-cpt-' . $index => array(
 									'class' => array(
-										'holeb-breadcrumbs-item',
-										'holeb-breadcrumbs-item-cat',
-										'holeb-breadcrumbs-item-cat-' . $cat_id,
-										'holeb-breadcrumbs-item-cat-' . $cat_nicename,
+										'grstbcmb-breadcrumbs-item',
+										'grstbcmb-breadcrumbs-item-cat',
+										'grstbcmb-breadcrumbs-item-cat-' . $cat_id,
+										'grstbcmb-breadcrumbs-item-cat-' . $cat_nicename,
 									),
 								),
 								'breadcrumbs-item-post-cpt-crumb-' . $index => array(
 									'class' => array(
-										'holeb-breadcrumbs-crumb',
-										'holeb-breadcrumbs-crumb-link',
-										'holeb-breadcrumbs-crumb-cat',
-										'holeb-breadcrumbs-crumb-cat-' . $cat_id,
-										'holeb-breadcrumbs-crumb-cat-' . $cat_nicename,
+										'grstbcmb-breadcrumbs-crumb',
+										'grstbcmb-breadcrumbs-crumb-link',
+										'grstbcmb-breadcrumbs-crumb-cat',
+										'grstbcmb-breadcrumbs-crumb-cat-' . $cat_id,
+										'grstbcmb-breadcrumbs-crumb-cat-' . $cat_nicename,
 									),
 									'href'  => $cat_link,
 									'title' => $cat_name,
@@ -759,16 +759,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-post'       => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-current',
-									'holeb-breadcrumbs-item-' . $post->ID,
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-current',
+									'grstbcmb-breadcrumbs-item-' . $post->ID,
 								),
 							),
 							'breadcrumbs-item-post-crumb' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-current',
-									'holeb-breadcrumbs-crumb-' . $post->ID,
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-current',
+									'grstbcmb-breadcrumbs-crumb-' . $post->ID,
 								),
 								'title' => get_the_title(),
 							),
@@ -781,16 +781,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-post'       => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-current',
-									'holeb-breadcrumbs-item-' . $post->ID,
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-current',
+									'grstbcmb-breadcrumbs-item-' . $post->ID,
 								),
 							),
 							'breadcrumbs-item-post-crumb' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-current',
-									'holeb-breadcrumbs-crumb-' . $post->ID,
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-current',
+									'grstbcmb-breadcrumbs-crumb-' . $post->ID,
 								),
 								'title' => get_the_title(),
 							),
@@ -803,16 +803,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-cat'       => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-current',
-									'holeb-breadcrumbs-item-cat',
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-current',
+									'grstbcmb-breadcrumbs-item-cat',
 								),
 							),
 							'breadcrumbs-item-cat-bread' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-current',
-									'holeb-breadcrumbs-crumb-cat',
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-current',
+									'grstbcmb-breadcrumbs-crumb-cat',
 								),
 							),
 						)
@@ -824,16 +824,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-page'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-' . $post->ID,
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-' . $post->ID,
 							),
 						),
 						'breadcrumbs-item-page-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-' . $post->ID,
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-' . $post->ID,
 							),
 							'title' => get_the_title(),
 						),
@@ -853,18 +853,18 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-tag'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-tag-' . $get_term_id,
-								'holeb-breadcrumbs-item-tag-' . $get_term_slug,
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-tag-' . $get_term_id,
+								'grstbcmb-breadcrumbs-item-tag-' . $get_term_slug,
 							),
 						),
 						'breadcrumbs-item-tag-bread' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-tag-' . $get_term_id,
-								'holeb-breadcrumbs-crumb-tag-' . $get_term_slug,
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-tag-' . $get_term_id,
+								'grstbcmb-breadcrumbs-crumb-tag-' . $get_term_slug,
 							),
 							'title' => get_the_title(),
 						),
@@ -876,50 +876,50 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-year'        => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-year',
-								'holeb-breadcrumbs-item-year-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-year',
+								'grstbcmb-breadcrumbs-item-year-' . get_the_time( 'Y' ),
 							),
 						),
 						'breadcrumbs-item-year-crumb'  => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-link',
-								'holeb-breadcrumbs-crumb-year',
-								'holeb-breadcrumbs-crumb-year-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-link',
+								'grstbcmb-breadcrumbs-crumb-year',
+								'grstbcmb-breadcrumbs-crumb-year-' . get_the_time( 'Y' ),
 							),
 							'href'  => get_year_link( get_the_time( 'Y' ) ),
 							'title' => get_the_time( 'Y' ),
 						),
 						'breadcrumbs-item-month'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-month',
-								'holeb-breadcrumbs-item-month-' . get_the_time( 'm' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-month',
+								'grstbcmb-breadcrumbs-item-month-' . get_the_time( 'm' ),
 							),
 						),
 						'breadcrumbs-item-month-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-link',
-								'holeb-breadcrumbs-crumb-month',
-								'holeb-breadcrumbs-crumb-month-' . get_the_time( 'm' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-link',
+								'grstbcmb-breadcrumbs-crumb-month',
+								'grstbcmb-breadcrumbs-crumb-month-' . get_the_time( 'm' ),
 							),
 							'href'  => get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ),
 							'title' => get_the_time( 'M' ),
 						),
 						'breadcrumbs-item-day'         => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-' . get_the_time( 'j' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-' . get_the_time( 'j' ),
 							),
 						),
 						'breadcrumbs-item-day-crumb'   => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-' . get_the_time( 'j' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-' . get_the_time( 'j' ),
 							),
 						),
 					)
@@ -940,32 +940,32 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-year'        => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-year',
-								'holeb-breadcrumbs-item-year-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-year',
+								'grstbcmb-breadcrumbs-item-year-' . get_the_time( 'Y' ),
 							),
 						),
 						'breadcrumbs-item-year-crumb'  => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-year',
-								'holeb-breadcrumbs-crumb-year-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-year',
+								'grstbcmb-breadcrumbs-crumb-year-' . get_the_time( 'Y' ),
 							),
 							'href'  => get_year_link( get_the_time( 'Y' ) ),
 							'title' => get_the_time( 'Y' ),
 						),
 						'breadcrumbs-item-month'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-month',
-								'holeb-breadcrumbs-item-month-' . get_the_time( 'm' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-month',
+								'grstbcmb-breadcrumbs-item-month-' . get_the_time( 'm' ),
 							),
 						),
 						'breadcrumbs-item-month-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-month',
-								'holeb-breadcrumbs-crumb-month-' . get_the_time( 'm' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-month',
+								'grstbcmb-breadcrumbs-crumb-month-' . get_the_time( 'm' ),
 							),
 							'title' => get_the_time( 'M' ),
 						),
@@ -984,16 +984,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-year'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-current-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-current-' . get_the_time( 'Y' ),
 							),
 						),
 						'breadcrumbs-item-year-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-current-' . get_the_time( 'Y' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-current-' . get_the_time( 'Y' ),
 							),
 							'title' => get_the_time( 'Y' ),
 						),
@@ -1011,16 +1011,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-author'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-current-' . $userdata->user_nicename,
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-current-' . $userdata->user_nicename,
 							),
 						),
 						'breadcrumbs-item-author-bread' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-current-' . $userdata->user_nicename,
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-current-' . $userdata->user_nicename,
 							),
 							'title' => $userdata->display_name,
 						),
@@ -1033,16 +1033,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-paged'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-current-' . get_query_var( 'paged' ),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-current-' . get_query_var( 'paged' ),
 							),
 						),
 						'breadcrumbs-item-paged-bread' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-current-' . get_query_var( 'paged' ),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-current-' . get_query_var( 'paged' ),
 							),
 							'title' => esc_html__( 'Page', 'greatest-breadcrumb' ) . ' ' . get_query_var( 'paged' ),
 						),
@@ -1055,16 +1055,16 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-search'       => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
-								'holeb-breadcrumbs-item-current-' . get_search_query(),
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item-current-' . get_search_query(),
 							),
 						),
 						'breadcrumbs-item-search-crumb' => array(
 							'class' => array(
-								'holeb-breadcrumbs-crumb',
-								'holeb-breadcrumbs-crumb-current',
-								'holeb-breadcrumbs-crumb-current-' . get_search_query(),
+								'grstbcmb-breadcrumbs-crumb',
+								'grstbcmb-breadcrumbs-crumb-current',
+								'grstbcmb-breadcrumbs-crumb-current-' . get_search_query(),
 							),
 							'title' => esc_html__( 'Search results for:', 'greatest-breadcrumb' ) . ' ' . get_search_query(),
 						),
@@ -1078,14 +1078,14 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 						array(
 							'breadcrumbs-item-blog' => array(
 								'class' => array(
-									'holeb-breadcrumbs-item',
-									'holeb-breadcrumbs-item-current',
+									'grstbcmb-breadcrumbs-item',
+									'grstbcmb-breadcrumbs-item-current',
 								),
 							),
 							'breadcrumbs-item-blog-crumb' => array(
 								'class' => array(
-									'holeb-breadcrumbs-crumb',
-									'holeb-breadcrumbs-crumb-current',
+									'grstbcmb-breadcrumbs-crumb',
+									'grstbcmb-breadcrumbs-crumb-current',
 								),
 								'title' => $blog_label,
 							),
@@ -1098,8 +1098,8 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 					array(
 						'breadcrumbs-item-error' => array(
 							'class' => array(
-								'holeb-breadcrumbs-item',
-								'holeb-breadcrumbs-item-current',
+								'grstbcmb-breadcrumbs-item',
+								'grstbcmb-breadcrumbs-item-current',
 							),
 						),
 					)
@@ -1131,7 +1131,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			$is_new   = ! isset( $settings['separator_icon'] ) && Icons_Manager::is_migration_allowed();
 			if ( $has_icon ) {
 				?>
-				<span class='holeb-separator-icon holeb-icon'>
+				<span class='grstbcmb-separator-icon grstbcmb-icon'>
 					<?php
 					if ( $is_new || $migrated ) {
 						Icons_Manager::render_icon( $settings['select_separator_icon'], array( 'aria-hidden' => 'true' ) );
@@ -1146,7 +1146,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			}
 		} else {
 			$this->add_inline_editing_attributes( 'separator_text' );
-			$this->add_render_attribute( 'separator_text', 'class', 'holeb-breadcrumbs-separator-text' );
+			$this->add_render_attribute( 'separator_text', 'class', 'grstbcmb-breadcrumbs-separator-text' );
 			echo '<span ' . wp_kses_post( $this->get_render_attribute_string( 'separator_text' ) ) . '>' . esc_attr( $settings['separator_text'] ) . '</span>';
 		}
 		$separator = ob_get_contents();
@@ -1156,7 +1156,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 
 	protected function render_separator( $output = true ) {
 		$settings = $this->get_settings_for_display();
-		$html  = '<li class="holeb-breadcrumbs-separator">';
+		$html  = '<li class="grstbcmb-breadcrumbs-separator">';
 		$html .= $this->get_separator();
 		$html .= '</li>';
 		if ( true === $output ) {
@@ -1172,22 +1172,22 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			array(
 				'home_item' => array(
 					'class' => array(
-						'holeb-breadcrumbs-item',
-						'holeb-breadcrumbs-item-home',
+						'grstbcmb-breadcrumbs-item',
+						'grstbcmb-breadcrumbs-item-home',
 					),
 				),
 				'home_link' => array(
 					'class' => array(
-						'holeb-breadcrumbs-crumb',
-						'holeb-breadcrumbs-crumb-link',
-						'holeb-breadcrumbs-crumb-home',
+						'grstbcmb-breadcrumbs-crumb',
+						'grstbcmb-breadcrumbs-crumb-link',
+						'grstbcmb-breadcrumbs-crumb-home',
 					),
 					'href'  => get_home_url(),
 					'title' => $settings['home_text'],
 				),
 				'home_text' => array(
 					'class' => array(
-						'holeb-breadcrumbs-text',
+						'grstbcmb-breadcrumbs-text',
 					),
 				),
 			)
@@ -1212,7 +1212,7 @@ class HOLEBreadcrumBWidget extends Widget_Base{
 			<a <?php echo wp_kses_post( $this->get_render_attribute_string( 'home_link' ) ); ?>>
 				<span <?php echo wp_kses_post( $this->get_render_attribute_string( 'home_text' ) ); ?>>
 					<?php if ( ! empty( $settings['home_icon'] ) || ( ! empty( $settings['select_home_icon']['value'] ) && $is_new_home_icon ) ) { ?>
-						<span class="holeb-icon">
+						<span class="grstbcmb-icon">
 							<?php
 							if ( $is_new_home_icon || $migrated_home_icon ) {
 								Icons_Manager::render_icon( $settings['select_home_icon'], array( 'aria-hidden' => 'true' ) );
