@@ -543,10 +543,59 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 			)
 		);
 		$this->end_controls_section();
+
+		$this->start_controls_section('grstbcmb_breadcrumbs_grstbcmb_structured_data',
+			[
+				'label' => __('Google Structured Data Schema', 'greatest-breadcrumb'),
+				'tab' => Controls_Manager::TAB_CONTENT,
+			]
+		);
+		$this->add_control(
+			'grstbcmb_enable_google_schema',
+				[
+					'label' => esc_html__('Enable Schema?', 'greatest-breadcrumb'),
+					'type' => Controls_Manager::SELECT,
+					'options'  => [
+						'yes'  => esc_html__('Yes', 'Show Child Pages', 'greatest-breadcrumb'),
+						'no' => esc_html__('No', 'Show Child Pages', 'greatest-breadcrumb'),
+					],
+					'default' => 'yes',
+				]
+		);
+		$this->end_controls_section();
 	}
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+		// For google schema
+		global $post;
+		global $wp;
+		$grstbcmb_structured_data = [];
+		$grstbcmb_structured_data['@context'] = 'https://schema.org/';
+		$grstbcmb_structured_data['@type'] = 'BreadcrumbList';
+		$grstbcmb_structured_data['itemListElement'] = [];
+		
+		$parents = get_post_ancestors($post->ID);
+		krsort($parents);
+		$parents_count = 1;
+		foreach($parents as $a_parent_ID){
+			$parent = get_post($a_parent_ID);
+			$grstbcmb_temp_data_item = [];
+			$grstbcmb_temp_data_item['@type'] = 'ListItem';
+			$grstbcmb_temp_data_item['position'] = $parents_count;
+			$grstbcmb_temp_data_item['name'] = $parent->post_title;
+			$grstbcmb_temp_data_item['item'] = get_the_permalink($parent->ID);
+			$output .= '<li class="visited"><a href="'.get_permalink($parent->ID).'">'.$parent->post_title.'</a></li>';
+			$grstbcmb_structured_data['itemListElement'][] = $grstbcmb_temp_data_item;
+			$parents_count++;
+		}
+		$grstbcmb_current_page_data['@type'] = 'ListItem';
+		$grstbcmb_current_page_data['position'] = intval($parents_count);
+		$grstbcmb_current_page_data['name'] = esc_attr(get_the_title());
+		$grstbcmb_current_page_data['item'] = home_url(add_query_arg(array(), $wp->request));
+		$grstbcmb_structured_data['itemListElement'][] = $grstbcmb_current_page_data;
+		// schema end
+
 		echo '<div class="grstbcmb_'.$settings['breadcrumb_presets_style'].'">';
 		$name_herE = 'greatest-breadcrumb';
 		if ( $name_herE == true ) {
@@ -559,6 +608,9 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 			} else {
 				$this->render_breadcrumbs();
 			}
+		}
+		if($settings['grstbcmb_enable_google_schema'] === 'yes'){
+				echo '<script type="application/ld+json">' . wp_json_encode($grstbcmb_structured_data) . '</script>';
 		}
 		echo '</div>';
 	}
