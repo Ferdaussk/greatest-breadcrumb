@@ -3,15 +3,15 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Greatest Breadcrumb\n"
-"POT-Creation-Date: 2023-03-01 14:59+0600\n"
-"PO-Revision-Date: 2023-03-01 14:59+0600\n"
+"POT-Creation-Date: 2023-03-04 19:18+0600\n"
+"PO-Revision-Date: 2023-03-04 19:18+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: greatest-breadcrumb.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -21,28 +21,28 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: greatest-breadcrumb.php:67 greatest-breadcrumb.php:82
+#: greatest-breadcrumb.php:69 greatest-breadcrumb.php:84
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: greatest-breadcrumb.php:68 greatest-breadcrumb.php:83
+#: greatest-breadcrumb.php:70 greatest-breadcrumb.php:85
 #: page-settings/grstbcmb-manager.php:21
 #: widgets/greatest-breadcrumb-widget.php:23
 msgid "Greatest Breadcrumb"
 msgstr ""
 
-#: greatest-breadcrumb.php:69
+#: greatest-breadcrumb.php:71
 msgid "Elementor"
 msgstr ""
 
-#: greatest-breadcrumb.php:73 greatest-breadcrumb.php:88
+#: greatest-breadcrumb.php:75 greatest-breadcrumb.php:90
 #, php-format
 msgid "%1$s"
 msgstr ""
 
-#: greatest-breadcrumb.php:84
+#: greatest-breadcrumb.php:86
 msgid "PHP"
 msgstr ""
 
@@ -110,165 +110,119 @@ msgstr ""
 msgid "Style 10"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:60
-msgid "Style 11"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:61
-msgid "Style 12"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:62
-msgid "Style 13"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:63
-msgid "Style 14"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:64
-msgid "Style 15"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:65
-msgid "Style 16"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:66
-msgid "Style 17"
-msgstr ""
-
 #: widgets/greatest-breadcrumb-widget.php:67
-msgid "Style 18"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:68
-msgid "Style 19"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:69
-msgid "Style 20"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:70
-msgid "Style 21"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:78
 msgid "Show Home"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:81
+#: widgets/greatest-breadcrumb-widget.php:70
 msgid "On"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:82
+#: widgets/greatest-breadcrumb-widget.php:71
 msgid "Off"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:90
+#: widgets/greatest-breadcrumb-widget.php:79
 msgid "Home Text"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:92
+#: widgets/greatest-breadcrumb-widget.php:81
 msgid "Home"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:105
+#: widgets/greatest-breadcrumb-widget.php:94
 msgid "Home Icon"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:122
+#: widgets/greatest-breadcrumb-widget.php:111
 msgid "Alignment"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:127
+#: widgets/greatest-breadcrumb-widget.php:116
 msgid "Left"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:131
+#: widgets/greatest-breadcrumb-widget.php:120
 msgid "Center"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:135
+#: widgets/greatest-breadcrumb-widget.php:124
 msgid "Right"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:154
+#: widgets/greatest-breadcrumb-widget.php:143
 msgid "Separate Indicator"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:161
+#: widgets/greatest-breadcrumb-widget.php:150
 msgid "Separate Type"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:165
+#: widgets/greatest-breadcrumb-widget.php:154
 msgid "Text"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:166
+#: widgets/greatest-breadcrumb-widget.php:155
 msgid "Icon"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:174
+#: widgets/greatest-breadcrumb-widget.php:163
 msgid "Separator"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:176
+#: widgets/greatest-breadcrumb-widget.php:165
 msgid ">"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:186
+#: widgets/greatest-breadcrumb-widget.php:175
 #: widgets/greatest-breadcrumb-widget.php:383
 msgid "Indicator"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:226
+#: widgets/greatest-breadcrumb-widget.php:215
 msgid "Items Style"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:234
+#: widgets/greatest-breadcrumb-widget.php:223
 msgid "Spacing"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:257
+#: widgets/greatest-breadcrumb-widget.php:241
 msgid "Normal"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:264
-#: widgets/greatest-breadcrumb-widget.php:330
+#: widgets/greatest-breadcrumb-widget.php:248
+#: widgets/greatest-breadcrumb-widget.php:309
+#: widgets/greatest-breadcrumb-widget.php:336
 #: widgets/greatest-breadcrumb-widget.php:391
 #: widgets/greatest-breadcrumb-widget.php:469
 msgid "Color"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:277
-#: widgets/greatest-breadcrumb-widget.php:343
-#: widgets/greatest-breadcrumb-widget.php:404
-#: widgets/greatest-breadcrumb-widget.php:481
-msgid "Background Color"
-msgstr ""
-
-#: widgets/greatest-breadcrumb-widget.php:290
+#: widgets/greatest-breadcrumb-widget.php:269
 #: widgets/greatest-breadcrumb-widget.php:417
 #: widgets/greatest-breadcrumb-widget.php:494
 msgid "Typography"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:299
+#: widgets/greatest-breadcrumb-widget.php:278
 #: widgets/greatest-breadcrumb-widget.php:426
 #: widgets/greatest-breadcrumb-widget.php:503
 msgid "Border"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:309
+#: widgets/greatest-breadcrumb-widget.php:288
 #: widgets/greatest-breadcrumb-widget.php:436
 #: widgets/greatest-breadcrumb-widget.php:513
 msgid "Border Radius"
 msgstr ""
 
-#: widgets/greatest-breadcrumb-widget.php:323
+#: widgets/greatest-breadcrumb-widget.php:302
 msgid "Hover"
+msgstr ""
+
+#: widgets/greatest-breadcrumb-widget.php:330
+msgid "Active"
 msgstr ""
 
 #: widgets/greatest-breadcrumb-widget.php:358
@@ -280,6 +234,11 @@ msgstr ""
 #: widgets/greatest-breadcrumb-widget.php:370
 #: widgets/greatest-breadcrumb-widget.php:537
 msgid "Margin"
+msgstr ""
+
+#: widgets/greatest-breadcrumb-widget.php:404
+#: widgets/greatest-breadcrumb-widget.php:481
+msgid "Background Color"
 msgstr ""
 
 #: widgets/greatest-breadcrumb-widget.php:461
@@ -314,12 +273,12 @@ msgid "Error 404"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://bwdplugins.com/plugins/greatest-breadcrumb"
+msgid "https://bestwpdeveloper.com/breadcrumb"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Greatest Breadcrumb plugin with 23+ types of  Breadcrumb Effects for "
+"Greatest Breadcrumb plugin with 9+ types of  Breadcrumb Effects for "
 "Elementor."
 msgstr ""
 

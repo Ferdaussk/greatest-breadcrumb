@@ -57,17 +57,6 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 					'style8' => esc_html__( 'Style 8', 'greatest-breadcrumb' ),
 					'style9' => esc_html__( 'Style 9', 'greatest-breadcrumb' ),
 					'style10' => esc_html__( 'Style 10', 'greatest-breadcrumb' ),
-					'style11' => esc_html__( 'Style 11', 'greatest-breadcrumb' ),
-					'style12' => esc_html__( 'Style 12', 'greatest-breadcrumb' ),
-					'style13' => esc_html__( 'Style 13', 'greatest-breadcrumb' ),
-					'style14' => esc_html__( 'Style 14', 'greatest-breadcrumb' ),
-					'style15' => esc_html__( 'Style 15', 'greatest-breadcrumb' ),
-					'style16' => esc_html__( 'Style 16', 'greatest-breadcrumb' ),
-					'style17' => esc_html__( 'Style 17', 'greatest-breadcrumb' ),
-					'style18' => esc_html__( 'Style 18', 'greatest-breadcrumb' ),
-					'style19' => esc_html__( 'Style 19', 'greatest-breadcrumb' ),
-					'style20' => esc_html__( 'Style 20', 'greatest-breadcrumb' ),
-					'style21' => esc_html__( 'Style 21', 'greatest-breadcrumb' ),
 				],
 			]
 		);
@@ -233,18 +222,13 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 			array(
 				'label'     => esc_html__( 'Spacing', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::SLIDER,
-				'default'   => array(
-					'size' => 10,
-				),
 				'range'     => array(
 					'px' => array(
 						'max' => 100,
 					),
 				),
 				'selectors' => array(
-					'{{WRAPPER}} .grstbcmb-breadcrumbs' => 'margin-left: -{{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .grstbcmb-breadcrumbs.grstbcmb-breadcrumbs-greatest-breadcrumb > li' => 'margin-left: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'margin-left: {{SIZE}}{{UNIT}}; margin-right: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs' => 'gap: {{SIZE}}{{UNIT}};',
 				),
 			)
 		);
@@ -270,19 +254,14 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 				),
 			)
 		);
-
-		$this->add_control(
-			'breadcrumbs_background_color',
-			array(
-				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
-				'type'      => Controls_Manager::COLOR,
-				'default'   => '',
-				'selectors' => array(
-					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) span:not(.separator)' => 'background-color: {{VALUE}}',
-				),
-			)
+		$this->add_group_control(
+			\Elementor\Group_Control_Background::get_type(),
+			[
+				'name' => 'breadcrumbs_background_color',
+				'types' => array( 'classic', 'gradient' ),
+				'selector' => '{{WRAPPER}} .grstbcmb-breadcrumbs-item:not(.grstbcmb-breadcrumbs-item-current), {{WRAPPER}} .grstbcmb-breadcrumbs-item::after, {{WRAPPER}} .grstbcmb-breadcrumbs-item::before',
+			]
 		);
-
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			array(
@@ -336,20 +315,41 @@ class GRSTBCMBreadcrumBWidget extends Widget_Base{
 				),
 			)
 		);
-
-		$this->add_control(
-			'breadcrumbs_background_color_hover',
+		$this->add_group_control(
+			\Elementor\Group_Control_Background::get_type(),
+			[
+				'name' => 'breadcrumbs_background_hover_color',
+				'types' => array( 'classic', 'gradient' ),
+				'selector' => '{{WRAPPER}} .grstbcmb-breadcrumbs-item:hover:not(.grstbcmb-breadcrumbs-item-current), {{WRAPPER}} .grstbcmb-breadcrumbs-item:hover::after, .grstbcmb-breadcrumbs-item:hover::before',
+			]
+		);
+		$this->end_controls_tab();
+		$this->start_controls_tab(
+			'tab_breadcrumbs_active',
 			array(
-				'label'     => esc_html__( 'Background Color', 'greatest-breadcrumb' ),
+				'label' => esc_html__( 'Active', 'greatest-breadcrumb' ),
+			)
+		);
+		$this->add_control(
+			'breadcrumbs_color_active',
+			array(
+				'label'     => esc_html__( 'Color', 'greatest-breadcrumb' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => array(
-					'{{WRAPPER}} .grstbcmb-breadcrumbs-crumb-link:hover, {{WRAPPER}} .grstbcmb-breadcrumbs:not(.grstbcmb-breadcrumbs-greatest-breadcrumb) a:hover' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .grstbcmb-breadcrumbs .grstbcmb-breadcrumbs-crumb-current' => 'color: {{VALUE}}',
 				),
 			)
 		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Background::get_type(),
+			[
+				'name' => 'breadcrumbs_background_active_color',
+				'types' => array( 'classic', 'gradient' ),
+				'selector' => '{{WRAPPER}} .grstbcmb-breadcrumbs .grstbcmb-breadcrumbs-item-current',
+			]
+		);
 		$this->end_controls_tab();
-
 		$this->end_controls_tabs();
 
 		$this->add_responsive_control(

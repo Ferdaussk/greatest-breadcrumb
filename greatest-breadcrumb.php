@@ -1,13 +1,15 @@
 <?php
 /**
  * Plugin Name: Greatest Breadcrumb
- * Description: Greatest Breadcrumb plugin with 23+ types of  Breadcrumb Effects for Elementor.
- * Plugin URI:  https://bwdplugins.com/plugins/greatest-breadcrumb
+ * Description: Greatest Breadcrumb plugin with 9+ types of  Breadcrumb Effects for Elementor.
+ * Plugin URI:  https://bestwpdeveloper.com/breadcrumb
  * Version:     1.0
  * Author:      Best WP Developer
  * Author URI:  https://bestwpdeveloper.com/
  * Text Domain: greatest-breadcrumb
- * Elementor tested up to: 3.0.0
+ *Elementor tested up to: 3.0.0
+ * Elementor Pro tested up to: 3.7.3
+ * Domain Path: /languages
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
